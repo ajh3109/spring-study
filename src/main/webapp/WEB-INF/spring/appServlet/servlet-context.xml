@@ -21,8 +21,10 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	<context:component-scan base-package="notice" />
+	<!--  
 	<context:component-scan base-package="study.spring.todo" />
-	
+	-->
 	
 	
 </beans:beans>
