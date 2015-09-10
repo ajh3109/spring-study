@@ -1,4 +1,4 @@
-package study.spring.todo;
+package study.spring.todo.web.controllers;
 
 import java.text.DateFormat;
 import java.util.Date;

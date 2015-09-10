@@ -1,0 +1,20 @@
+1. 개발 준비
+ - DB
+  : HSQLDB
+ - ORM
+  : 공부 목적으로 ORM을 사용하여 sql 구조 개발
+ - HIBERNATE
+  : ORM 사용을 위해 Mybatis->Hibernate 구조로 변경
+  
+1. todo list 개발을 위한 class 구조 설계
+ - 부가적으로 ClassDiagram 작성 필요
+2. 세션 권한 처리를 위해 인터셉터 class 설계
+ - xml 설정 아직 안함
+
+todo..
+ . 각 xml 설정 변경
+ . lib download를 위해 maven 설정 (각 lib search 필요)
+ . hsqldb 공부
+ . hibernate 공부
+ . ORM 사용법 공부
+ 
