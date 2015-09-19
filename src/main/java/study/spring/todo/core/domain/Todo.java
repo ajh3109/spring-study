@@ -1,7 +1,7 @@
 package study.spring.todo.core.domain;
 
 /**
- * TODO 관리 클래
+ * TODO 관리 클래스
  * 
  * @author ajh3109
  *

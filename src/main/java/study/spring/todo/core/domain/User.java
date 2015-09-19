@@ -1,5 +1,11 @@
 package study.spring.todo.core.domain;
 
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 
 /**
  * 계정 정보 클래스
@@ -7,9 +13,16 @@ package study.spring.todo.core.domain;
  * 
  * @author ajh3109
  */
-public class User {
-	//TODO ORM 기반인 NamedQueries 추가 (하이버네이트 사용) 
-	
+@Entity
+@NamedQueries({ @NamedQuery(name = "findUserByUserId", query = "SELECT u FROM USER u WHERE u.USER_ID = :userId"),
+		@NamedQuery(name = "findUserByUserIdAndUserPassword", query = "SELECT u FROM USER u where u.USER_ID = :userId and u.USER_PASSWORD = :userPassword") })
+public class User implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5536689068932930498L;
+	@Id
 	private Long userId;
 	private String userName;
 	private String userPassword;
