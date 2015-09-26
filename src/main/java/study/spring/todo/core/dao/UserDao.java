@@ -21,9 +21,9 @@ public class UserDao {
 	 * @return
 	 */
 	public boolean login(final String userId, final String userPassword) {
-		TypedQuery<User> query = entityManager.createNamedQuery("findUserByIdAndPassword", User.class);
-		query.setParameter("USER_ID", userId);
-		query.setParameter("user_password", userPassword);
+		TypedQuery<User> query = entityManager.createNamedQuery("findUserByUserIdAndUserPassword", User.class);
+		query.setParameter("userId", userId);
+		query.setParameter("userPassword", userPassword);
 		List<User> users = query.getResultList();
 		return (users != null && !users.isEmpty());
 	}

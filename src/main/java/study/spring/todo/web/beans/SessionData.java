@@ -1,5 +1,7 @@
 package study.spring.todo.web.beans;
 
+import java.io.Serializable;
+
 import study.spring.todo.core.domain.User;
 
 /**
@@ -8,8 +10,13 @@ import study.spring.todo.core.domain.User;
  * @author ajh3109
  *
  */
-public class SessionData {
+public class SessionData implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8034086787631600903L;
+	
 	private User userData;
 
 	public User getUserData() {
